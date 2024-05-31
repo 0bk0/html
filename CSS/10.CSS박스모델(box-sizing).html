@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스모델(box-sizing)</title>
+    <style>
+      .box {
+        border: 7px solid red;
+        width: 400px;
+        height: 100px;
+        text-align: center;
+        padding: 20px;
+        font-size: 50px;
+        /* 
+            box-sizing
+            요소의 너비와 높이를 계산하는 방법을 지정
+
+                content-box(기본값)
+                - 가로와 세로가 컨텐츠 영역의 크기를 정릐
+                    패딩과 보더가 이 크기에 추가
+
+                border-box
+                - 가로와 세로가 컨텐츠, 패딩, 테두리까지
+                    포함한 요소의 전체 크기를 정의
+                    따라서, 요소의 총 크기는 항상 지정된
+                    가로, 세로 값과 일치
+        */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="box">박스 모델</h1>
+  </body>
+</html>

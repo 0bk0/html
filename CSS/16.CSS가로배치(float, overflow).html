@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float, overflow</title>
+    <style>
+      section {
+        border: 5px solid blue;
+        width: 620px;
+        height: 100px;
+        overflow: scroll;
+        /* visible, hidden, scroll */
+      }
+      div {
+        background-color: yellow;
+        width: 200px;
+        height: 150px;
+        float: left;
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+    </section>
+  </body>
+</html>

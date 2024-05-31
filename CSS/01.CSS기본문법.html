@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01.CSS 기본 문법</title>
+    <link rel="stylesheet" href="../CSS/css_folder/style01.css" />
+    <style>
+      /* 스타일 시트 안에서 주석적용 방법 */
+      /* 출력창에서 F12번 = 개발자 모드 */
+      body {
+        background-color: ivory;
+      }
+      h1 {
+        font-size: 50px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>내부 StyleSheet</h1>
+    <h2>외부 StyleSheet</h2>
+    <h3 style="font-size: 80px; color: red">인라인 Style</h3>
+
+    <!-- 
+        CSS = 쉽게 말하면 디자인을 만드는 것
+        CSS(Cascading Style Sheets - 계단식, 위에서 아래로 흐르는?느낌)는
+        HTML이나 XML로 작성된 문서의 시각적 표현을 정의하는 스타일 시트 언어,
+        CSS를 사용하여 웹 페이지의 레이아웃, 색상, 글꼴 등을
+        쉽게 조정할 수 있음.
+        일부 CSS 속성은 부모 요소로부터 자식 요소에 상속.
+
+        선택자 {
+            스타일 속성 : 속성값
+        }
+
+        * 스타일을 적용시키는 방법
+        1. 인라인 방식(직접 태그 안에 style 속성으로 접근)
+        2. <head>태그에 <style>태그 내에 선택자로 접근
+        3. 외부 파일에서 선택자로 접근하여 변경
+     -->
+  </body>
+</html>

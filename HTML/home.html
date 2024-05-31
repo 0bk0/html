@@ -1,0 +1,64 @@
+<!-- 컨트롤 + / 주석표시-->
+<!-- 느낌표 + tab 자동설정? -->
+
+<!-- html의 버전 정보를 표시 -->
+<!DOCTYPE html>
+<!-- html 문서의 시작을 알리는 부분 -->
+<!-- 문서에서 사용할 언어를 지정 -->
+<html lang="en">
+  <!-- 브라우저에 정보를 주는 태그 -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- ↓여기서 인코딩 방식 지정해줌 -->
+    <!-- 반응형 디자인을 지원해서 다양한 장치에서 페이지가 잘 보이게 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <!-- <script>, <style> -->
+  </head>
+
+  <!-- 브라우저에 실제로 표시되는 내용 -->
+  <body>
+    <h1>welcome home abcdef</h1>
+    <!-- ↓단축키 alt + B -->
+
+    <!-- 
+        <a> : HTML내에 링크를 생성하는 태그
+        href 속성 : 링크로 이동할 URL을 지정
+        target 속성 : 링크가 이동할 위치를 지정
+            _self : 링크를 현재 창이나 프레임에서 열기(기본값)
+            _blank : 링크를 새 탭이나 새 창에서 열기
+            _parent : 링크를 현재 프레임의 부모 프레임에서 열기
+            _tap : 링크를 최상위 프레임에서 열기  
+    -->
+    <a href="http://naver.com" target="_blank">네이버</a>
+    <a href="http://daum.net" target="_parent">다음</a>
+    <a href="http://google.com" target="_top">구글</a>
+
+    <hr />
+    <!--줄 표시 -->
+
+    <ul>
+      <li>
+        <a href="./0.route/route.html">경로</a>
+      </li>
+      <li>
+        <a href="./1.image/image.html">이미지</a>
+      </li>
+      <li>
+        <a href="./2.text/text1.html">문단, 텍스트 서식</a>
+      </li>
+      <li>
+        <a href="./2.text/text2.html">목록</a>
+      </li>
+      <li>
+        <a href="./3.table/table.html">테이블</a>
+      </li>
+      <li>
+        <a href="./4.form/form.html">폼</a>
+      </li>
+      <li>
+        <a href="./4.form/form2.html">input 태그 종류</a>
+      </li>
+    </ul>
+  </body>
+</html>

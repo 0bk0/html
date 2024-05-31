@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 테스트 중</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>회원정보</legend>
+        아이디: <br /><input type="text" name="input" required /><br />
+        패스워드: <br /><input type="password" name="password" required /><br />
+      </fieldset>
+      <fieldset>
+        <legend>과목</legend>
+        HTML <input type="checkbox" name="checkbox" value="HTML" /> CSS
+        <input type="checkbox" name="checkbox" value="CSS" /> JavaScript
+        <input type="checkbox" name="checkbox" value="JavaScript" />
+        <br />
+        상<input type="radio" name="radio" value="상" /> 중<input
+          type="radio"
+          name="radio"
+          value="중"
+        />
+        하<input type="radio" name="radio" value="하" />
+      </fieldset>
+      <fieldset>
+        <legend>점심메뉴</legend>
+        희망하는 점심시간 <input type="time" /><br />
+        오늘의 메뉴는?
+        <select name="select" multiple>
+          <option value="한식">제육볶음</option>
+          <option value="중식">짬뽕</option>
+          <option value="일식">초밥</option>
+          <option value="양식">스테이크</option>
+          <option value="아시안음식">쌀국수</option>
+          <option value="디저트">티라미수</option>
+          <option value="음료">아이스 아메리카노</option>
+        </select>
+      </fieldset>
+      <input type="submit" value="전송하기" />
+      <input type="reset" value="취소하기" />
+    </form>
+  </body>
+</html>
