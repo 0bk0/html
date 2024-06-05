@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript 예제</title>
+    <style>
+      table {
+        border: 1px solid black;
+        text-align: center;
+        margin: 0 auto;
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script>
+      window.onload = function () {
+        // var, let, const
+        let uid = Document.getElementById("#uid");
+        let pw = Document.getElementById("#pw");
+        let cpw = Document.getElementById("#cpw");
+
+        id.addEventListener("keyup", function () {
+          if (uid.value.lenght >= 8) {
+            uid.style.backgroundColor = "lightblue";
+          } else {
+            uid.style.backgroundColor = "lightpink";
+          }
+        });
+
+        cpw.addEventListener("keyup", function () {
+          if (upw.value == cpw.value) {
+            cpw.style.backgroundColor = "lightblue";
+          } else {
+            cpw.style.backgroundColor = "lightpink";
+          }
+        });
+      };
+
+      function infoCheck() {
+        let uid = document.querySelector("#uid");
+        let upw = document.querySelector("#upw");
+        let cpw = document.querySelector("#cpw");
+
+        console.log(uid.value);
+        console.log(upw.value);
+        console.log(cpw.value);
+
+        if (uid.value.lenght < 8) {
+          alert("ID는 8자 이상 쓰라고");
+          return false;
+        }
+        if (
+          upw.value == null ||
+          cpw.value == null ||
+          upw.value == "" ||
+          cpw.value == "" ||
+          upw.value != cpw.value
+        ) {
+          alert("PW가 비어있거나 일치하지 않음");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center">회원 가입</h1>
+    <table>
+      <form action="" method="get" onsubmit="return infoCheck();">
+        <tr>
+          <th><b>아이디 </b></th>
+          <td>
+            <input
+              type="text"
+              name="uid"
+              id="uid"
+              placeholder="아이디는 8자 이상"
+            />
+          </td>
+        </tr>
+        <tr>
+          <th><b>비밀번호</b></th>
+          <td><input type="password" name="pw" id="pw" /></td>
+        </tr>
+        <tr>
+          <th><b>비밀번호 확인</b></th>
+          <td>
+            <input type="password" id="cpw" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="가입" class="btn" />
+            <input type="reset" value="취소" class="btn" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
